@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+
+  <view>
+    <view>
+      <navigator url='../basic/index'>Basic</navigator>
+      <navigator url='../form/index'>Form</navigator>
+      <navigator url='../media/index'>Media</navigator>
+      <navigator url='../map/index'>Map</navigator>
+      <navigator url='../open-data/index'>Open-Data</navigator>
+      <navigator url='../web-view/index'>Web-View</navigator>
+    </view>
+  </view>
+
+  <view>
+    <button open-type='share' type='primary' size='mini'>Share</button>
+  </view>
+</view>

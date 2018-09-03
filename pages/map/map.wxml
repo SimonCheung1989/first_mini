@@ -1,0 +1,5 @@
+<!--pages/map/map.wxml-->
+<scroll-view>
+  <map></map>
+</scroll-view>
+

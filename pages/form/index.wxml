@@ -1,0 +1,79 @@
+<!--pages/form/form.wxml-->
+<view>
+      <form>
+        <label>User Name:</label>
+        <input name='userName'></input>
+        <checkbox-group bindchange='checkboxChange'>
+          <label>
+            <checkbox checked='true' color='red' value='Red' />Red
+          </label>
+          <label>
+            <checkbox checked='true' color='green' value='Green' />Green
+          </label>
+          <label>
+            <checkbox checked='true' color='blue' value='Blue' />Blue
+          </label>
+        </checkbox-group>
+        <radio-group bindchange='radioboxChange'>
+          <radio value='Male' checked='true' />Male
+          <radio value='Female' color='red' />Female
+        </radio-group>
+        <view>
+          <picker mode='date' start='2015-09-01' end='2020-09-01' value='2015-09-01'></picker>
+        </view>
+        <view>
+          <picker-view indicator-style='height: 50px;' style='width: 100%; height: 100px;'>
+            <piicker-view-column>
+              <view>1999Year</view>
+              <view>1999Year</view>
+            </piicker-view-column>
+            <piicker-view-column>
+              <view>1Month</view>
+              <view>2Month</view>
+              <view>3Month</view>
+              <view>4Month</view>
+              <view>5Month</view>
+              <view>6Month</view>
+              <view>7Month</view>
+              <view>8Month</view>
+            </piicker-view-column>
+          </picker-view>
+        </view>
+        
+        <view>
+          <slider min='0' max='100' step='2' show-value='true'></slider>
+        </view>
+
+        <view>
+          <switch></switch>
+        </view>
+        
+
+        <view>
+          <button type='primary' size='mini' form-type='submit'>Submit</button>
+          <button type='default' size='mini' form-type='reset'>Reset</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='contact'>Contact</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='share'>Share</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='getUserInfo'>getUserInfo</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='getPhoneNumber'>getPhoneNumber</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='launchApp'>launchApp</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='openSetting'>openSetting</button>
+        </view>
+        <view>
+          <button type='warn' size='mini' open-type='feedback'>feedback</button>
+        </view>
+      </form>
+      
+    </view>

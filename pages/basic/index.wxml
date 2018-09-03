@@ -1,0 +1,21 @@
+<!--pages/basic/index.wxml-->
+<view>
+      <icon type='success'></icon>
+      <icon type='success_no_circle'></icon>
+      <icon type='info'></icon>
+      <icon type='warn'></icon>
+      <icon type='waiting'></icon>
+      <icon type='info'></icon>
+      <icon type='cancel'></icon>
+      <icon type='download' size='30'></icon>
+      <view>
+        <text>Progress</text>
+        <progress show-info='true' percent='30' backgroundColor='red' active='true'></progress>
+        <progress show-info='true' percent='50' backgroundColor='red' active='true'></progress>
+        <progress show-info='true' percent='70' backgroundColor='red' active='true'></progress>
+        <progress show-info='true' percent='100' backgroundColor='red' active='true'></progress>
+      </view>
+      
+</view>   
+    
+    
